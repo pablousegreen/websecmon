@@ -25,6 +25,18 @@ public class Users {
 
 	
 
+	public Users(Users users) {
+		super();
+		this.email = users.getEmail();
+		this.password = users.getPassword();
+		this.name = users.getName();
+		this.lastName = users.getLastName();
+		this.active = users.getActive();
+		this.roles = users.getRoles();
+	}
+
+
+
 	public String getEmail() {
 		return email;
 	}
